@@ -8,9 +8,9 @@ namespace RunPathApi.Core.Services
 {
     public class PhotoService
     {
-        protected PhotoService(IPhotoFeed photoFeed)
+        protected PhotoService(IPhotoFeed feed)
         {
-            this.photoFeed = photoFeed;
+            photoFeed = feed;
         }
 
         public static PhotoService Create()
@@ -68,7 +68,7 @@ namespace RunPathApi.Core.Services
         }
 
         private IPhotoFeed photoFeed;
-        private IEnumerable<Photo> photos;
-        private IEnumerable<Album> albums;
+        private static IEnumerable<Photo> photos;
+        private static IEnumerable<Album> albums;
     }
 }

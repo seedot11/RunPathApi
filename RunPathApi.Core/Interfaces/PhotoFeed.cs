@@ -9,7 +9,7 @@ namespace RunPathApi.Core.Interfaces
             string json;
             using (WebClient wc = new WebClient())
             {
-                json = wc.DownloadString($@"http://jsonplaceholder.typicode.com/{location}");
+                json = wc.DownloadString(AppSettings.PhotosUrl() + location);
             }
             return json;
         }

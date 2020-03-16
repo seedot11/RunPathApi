@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 
-namespace RunPathApi
+namespace RunPathApi.Core
 {
     public static class AppSettings
     {
