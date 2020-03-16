@@ -68,7 +68,7 @@ namespace RunPathApi.Core.Services
         }
 
         private IPhotoFeed photoFeed;
-        private static IEnumerable<Photo> photos;
-        private static IEnumerable<Album> albums;
+        private IEnumerable<Photo> photos;
+        private IEnumerable<Album> albums;
     }
 }
